@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/bs.min.css" />
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <link rel="stylesheet" href="./css/register.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <title>Document</title>
+</head>
+<body>
+  <div class="form p-5 animate__animated animate__fadeInUp">
+    <h1 class="mx-auto">register form</h1>
+    <form>
+      <div class="mb-4 animate__animated animate__fadeInRight">
+        <i class="fa-solid fa-file-signature fa-bounce" style="--fa-animation-duration: 2s;"></i>
+        <label for="exampleInputEmail1" class="form-label">full name: </label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="first and second name" required/>
+      </div>
+      <div class="mb-4 animate__animated animate__fadeInLeft">
+        <i class="fa-solid fa-at fa-bounce" style="--fa-animation-duration: 2s;"></i>
+        <label for="exampleInputEmail1" class="form-label">Email: </label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com" required/>
+        <div id="emailHelp" class="form-text">* We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-4 animate__animated animate__fadeInRight">
+        <i class="fa-solid fa-key fa-bounce" style="--fa-animation-duration: 2s;"></i>
+        <label for="exampleInputPassword1" class="form-label">Password: </label>
+        <input type="password" class="form-control" id="exampleInputPassword1" minlength="8" required placeholder="write strong password"/>
+      </div>
+      <div class="mb-4 animate__animated animate__fadeInLeft">
+        <i class="fa-solid fa-lock fa-bounce" style="--fa-animation-duration: 2s;"></i>
+        <label for="exampleInputPassword1confirm" class="form-label">confirm Password: </label>
+        <input type="password" class="form-control" id="exampleInputPassword1confirm" minlength="8" required placeholder="confirm password"/>
+      </div>
+      <div class="mb-4 animate__animated animate__fadeInRight">
+        <i class="fa-solid fa-phone fa-bounce" style="--fa-animation-duration: 2s;"></i>
+        <label for="phonenumber" class="form-label">phone number: </label>
+        <input type="number" class="form-control" id="phonenumber" placeholder="0123456789" maxlength="11" required/>
+      </div>
+      <div class="mb-4 animate__animated animate__fadeInLeft">
+        <i class="fa-solid fa-person fa-bounce" style="--fa-animation-duration: 2s;"></i>
+        <label for="age" class="form-label">age: </label>
+        <input type="number" class="form-control" id="age" aria-describedby="emailHelp" placeholder="your age " required/>
+      </div>
+      <div class="mb-4 form-check p-0">
+        <div>
+          <i class="fa-solid fa-venus-mars fa-bounce" style="--fa-animation-duration: 2s;"></i>
+          <h5>your gender: </h5>
+        </div>
+        <div class="ms-5">
+          <div class="male animate__animated animate__fadeInLeft">
+            <input type="radio" class="form-check-input" id="exampleCheck1" name="gender"/>
+            <label class="form-check-label" for="exampleCheck1">male</label> 
+          </div>
+          <div class="female animate__animated animate__fadeInRight">
+            <input type="radio" class="form-check-input" id="exampleCheck2" name="gender"/>
+            <label class="form-check-label" for="exampleCheck2">female</label> 
+          </div>
+        </div>
+      </div>
+      <div class="mb-4 animate__animated animate__fadeInRight">
+        <button type="submit" class="btn btn-primary col-12">register</button>
+      </div>
+      <div class="mb-0 animate__animated animate__fadeInLeft">
+        <div class=""><div class="mb-2">* Already have an account ?</div> <a href="./index.html" class="btn btn-primary col-12">sign in</a></div>
+      </div>
+    </form>
+  </div>
+  <!-- background -->
+  <div class="background" data-aos="zoom-out" data-aos-duration="2000">
+    <div class="c1"></div>
+    <div class="c2"></div>
+    <div class="c3"></div>
+  </div>
+  <script src="./bundle.min.js"></script>
+</body>
+</html>

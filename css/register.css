@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+  caret-color: transparent;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #e91e62;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #e91e63d7;
+}
+
+body {
+  margin: 0;
+  padding: 50px 0;
+  width: 100vw;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+/* ===============================================background===================================== */
+.background {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: -1;
+}
+.background .c1,
+.background .c2,
+.background .c3 {
+  width: 250px;
+  height: 250px;
+}
+.background .c1 {
+  background-color: #f57b00d7;
+  border-radius: 71% 25% 45% 55% / 55% 31% 60% 43%;
+  -webkit-border-radius: 71% 25% 45% 55% / 55% 31% 60% 43%;
+  -moz-border-radius: 71% 25% 45% 55% / 55% 31% 60% 43%;
+  -ms-border-radius: 71% 25% 45% 55% / 55% 31% 60% 43%;
+  -o-border-radius: 71% 25% 45% 55% / 55% 31% 60% 43%;
+  animation: bg-animation1 20s linear infinite alternate;
+  -webkit-animation: bg-animation1 20s linear infinite alternate;
+}
+.background .c2 {
+  background-color: #03a9f4d7;
+  border-radius: 21% 65% 57% 43% / 28% 40% 60% 66%;
+  -webkit-border-radius: 21% 65% 57% 43% / 28% 40% 60% 66%;
+  -moz-border-radius: 21% 65% 57% 43% / 28% 40% 60% 66%;
+  -ms-border-radius: 21% 65% 57% 43% / 28% 40% 60% 66%;
+  -o-border-radius: 21% 65% 57% 43% / 28% 40% 60% 66%;
+  animation: bg-animation3 15s linear infinite alternate;
+  -webkit-animation: bg-animation3 15s linear infinite alternate;
+}
+.background .c3 {
+  background-color: #e91e63d7;
+  border-radius: 46% 47% 42% 58% / 22% 22% 70% 73%;
+  -webkit-border-radius: 46% 47% 42% 58% / 22% 22% 70% 73%;
+  -moz-border-radius: 46% 47% 42% 58% / 22% 22% 70% 73%;
+  -ms-border-radius: 46% 47% 42% 58% / 22% 22% 70% 73%;
+  -o-border-radius: 46% 47% 42% 58% / 22% 22% 70% 73%;
+  animation: bg-animation2 20s linear infinite alternate;
+  -webkit-animation: bg-animation2 20s linear infinite alternate;
+}
+@keyframes bg-animation1 {
+  0% {
+    transform: translate(0px, -160px);
+    -webkit-transform: translate(0px, -160px);
+    -moz-transform: translate(0px, -160px);
+    -ms-transform: translate(0px, -160px);
+    -o-transform: translate(0px, -160px);
+  }
+  50% {
+    transform: translate(477px, -41px);
+    -webkit-transform: translate(477px, -41px);
+    -moz-transform: translate(477px, -41px);
+    -ms-transform: translate(477px, -41px);
+    -o-transform: translate(477px, -41px);
+  }
+
+  100% {
+    transform: translate(0px, 100px);
+    -webkit-transform: translate(0px, 100px);
+    -moz-transform: translate(0px, 100px);
+    -ms-transform: translate(0px, 100px);
+    -o-transform: translate(0px, 100px);
+  }
+}
+@keyframes bg-animation2 {
+  0% {
+    transform: translate(0px, 175px);
+    -webkit-transform: translate(0px, 175px);
+    -moz-transform: translate(0px, 175px);
+    -ms-transform: translate(0px, 175px);
+    -o-transform: translate(0px, 175px);
+  }
+  50% {
+    transform: translate(-488px, -172px);
+    -webkit-transform: translate(-488px, -172px);
+    -moz-transform: translate(-488px, -172px);
+    -ms-transform: translate(-488px, -172px);
+    -o-transform: translate(-488px, -172px);
+  }
+  100% {
+    transform: translate(6px, -172px);
+    -webkit-transform: translate(6px, -172px);
+    -moz-transform: translate(6px, -172px);
+    -ms-transform: translate(6px, -172px);
+    -o-transform: translate(6px, -172px);
+  }
+}
+@keyframes bg-animation3 {
+  0% {
+    transform: translate(140px, -168px);
+    -webkit-transform: translate(140px, -168px);
+    -moz-transform: translate(140px, -168px);
+    -ms-transform: translate(140px, -168px);
+    -o-transform: translate(140px, -168px);
+  }
+  50% {
+    transform: translate(-130px, 180px);
+    -webkit-transform: translate(-130px, 180px);
+    -moz-transform: translate(-130px, 180px);
+    -ms-transform: translate(-130px, 180px);
+    -o-transform: translate(-130px, 180px);
+  }
+  100% {
+    transform: translate(135px, 167px);
+    -webkit-transform: translate(135px, 167px);
+    -moz-transform: translate(135px, 167px);
+    -ms-transform: translate(135px, 167px);
+    -o-transform: translate(135px, 167px);
+  }
+}
+/* ===============================================background===================================== */
+.form-text,
+.btn {
+  color: unset;
+}
+/* ================================================= form ======================================= */
+.form > h1{
+  width: fit-content;
+  font-weight: bolder;
+  background-image: linear-gradient(135deg,#f57b00d7, #e91e63d7, #03a9f4d7);
+  background-clip: text;
+  color: transparent;
+  background-size: 500%;
+  animation: h-animation 3s linear alternate infinite;
+  -webkit-animation: h-animation 3s linear alternate infinite;
+  font-size: 60px;
+  line-height: 1.7;
+}
+@keyframes h-animation{
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 100%;
+  }
+}
+.form {
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px 1px #ffffff46;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.form-control {
+  padding: 10px;
+  background-color: #eee;
+  border: unset;
+  outline: unset;
+  box-shadow: unset;
+  /*border-bottom: 5px solid #f57b00d7;
+  */border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition:.3s;
+  -webkit-transition:.3s;
+  -moz-transition:.3s;
+  -ms-transition:.3s;
+  -o-transition:.3s;
+}
+.form-control:focus {
+  border: unset;
+  outline: unset;
+  box-shadow: unset;
+  caret-color: #03a9f4;
+  background-color: #eee;
+  border-left: 7px solid #f57b00d7;
+}
+.mb-4 {
+  font-size: 24px;
+}
+.mb-4 i {
+  margin-right: 5px;
+  color: #f57b00d7;
+}
+.btn {
+  color: white;
+  border: none;
+  background-clip: border-box;
+  background-image: linear-gradient(135deg, #f57b00d7, #e91e63d7, #03a9f4d7);
+  background-size: 600%;
+  animation: btn 3s infinite alternate ease;
+  -webkit-animation: btn 3s infinite alternate ease;
+}
+@keyframes btn {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+.mb-4.form-check.p-0 div:nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+.mb-4.form-check.p-0 div:nth-child(1) i {
+  margin-right: 10px;
+}
+.mb-4.form-check.p-0 div:nth-child(2) {
+  display: flex;
+  justify-content: space-around;
+}
+.mb-4.form-check.p-0 div:nth-child(2) input {
+  margin-right: 10px;
+  font-size: 20px;
+}
+/* =================================================form======================================= */
+/* ==========================================media query======================================= */
+@media (max-width:560px)  {
+  body{
+    overflow-x: hidden;
+  }
+  .form {
+    padding: 30px  !important;
+    margin: 0 auto;
+  }
+  .form > h1{
+  font-size: 30px;
+}
+}
+/* ==========================================media query======================================= */
+
+/* =========================================== animation ========================================= */
+.animate__animated{
+  --animate-duration: 2s;
+}
+/* =========================================== animation ========================================= */

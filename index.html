@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/bs.min.css" />
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <title>Document</title>
+</head>
+<body>
+  <div class="form p-5 animate__animated animate__fadeInUp">
+    <h1 class="mx-auto">login form</h1>
+    <form>
+      <div class="mb-4 animate__animated animate__fadeInRight">
+        <i class="fa-solid fa-at fa-bounce" style="--fa-animation-duration: 2s;"></i>
+        <label for="exampleInputEmail1" class="form-label">Email: </label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com" required/>
+        <div id="emailHelp" class="form-text">* We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-4 animate__animated animate__fadeInLeft" >
+        <i class="fa-solid fa-key fa-bounce" style="--fa-animation-duration: 2s;"></i>
+        <label for="exampleInputPassword1" class="form-label">Password: </label>
+        <input type="password" class="form-control" id="exampleInputPassword1" minlength="8" required placeholder="write strong password"/>
+      </div>
+      <div class="mb-4 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+        <label class="form-check-label" for="exampleCheck1" >remember me</label>
+      </div>
+      <div class="mb-4 animate__animated animate__fadeInRight">
+        <button type="submit" class="btn btn-primary col-12">sign in</button>
+      </div>
+      <div class="mb-0 animate__animated animate__fadeInLeft">
+        <div class=""><div class="mb-2">* Do not have an account?</div> <a href="./register-page.html" class="btn btn-primary col-12">register now !</a></div>
+      </div>
+    </form>
+  </div>
+  <!-- background -->
+  <div class="background">
+    <div class="c1 animate__animated animate__fadeInLeft"></div>
+    <div class="c2 animate__animated animate__fadeInRight"></div>
+    <div class="c3 animate__animated animate__fadeInUp"></div>
+  </div>
+  <script src="./bundle.min.js"></script>
+</body>
+</html>
